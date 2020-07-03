@@ -1,0 +1,48 @@
+.novedades {
+    height: 341px;
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    h2 {
+        padding: 64px 16px 36px;
+        color: #ffffff;
+        text-align: center;
+        font-weight: 100;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 16px;
+        height: 48px;
+        background: #00F3BB;
+        text-decoration: none;
+        color: #060A24
+    }
+}
+
+
+@media only screen and (min-width: 520px) {
+    .novedades{
+        width: 1440px;
+        margin-right: 0;
+        height: 518px;
+
+        h2 {
+            width: 692px; 
+            height: 62px;
+            padding-top: 213px;
+            padding-right: 0;
+            padding-left: 0;
+            margin: 0 374px 52px 374px;
+            text-align: center;
+            font-size: 48px;
+        }
+
+        a {
+            width: 345px;
+            height: 56px;
+            margin: 0 547px;
+        }
+    }
+    
+}

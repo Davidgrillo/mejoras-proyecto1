@@ -1,0 +1,151 @@
+/* Variables Globales */
+
+html {
+    box-sizing: border-box;
+    p,
+    h1,
+    h2,
+    img,
+    iframe,
+    section,
+    div,
+    footer,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+
+h1,
+h2 {
+    font-family: $font2;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
+}
+
+
+
+.de-donde-venimos, .titulo p {
+    font-family: $font1;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+a {
+    font-family: $font1;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #060A24;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
+.algunos-temas {
+    p {
+        font-weight: 600;
+        font-size: 24px;
+        color: #060A24;
+        letter-spacing: 0;
+        font-family: $font2;
+            
+    }
+   
+} 
+
+@media only screen and (min-width: 520px) {
+    
+    /* main {
+        width: 100%;
+    } */
+
+
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.titulo {
+    .conoce-mas {
+        a {
+            background-color:#00F3BB;
+            &:hover{
+                animation: actn 0.5s infinite;
+                color: #ffffff;
+            }
+            @keyframes actn{
+                from{background-color:#00F3BB; }
+                to {background: linear-gradient( 225deg, #0000FE 0%, #00F0B8 100%); 
+                }
+            }
+        }
+    }
+}
+
+ .boton{
+     background-color:#00F3BB;
+     &:hover{
+         animation: actn 0.5s infinite;
+         color: #ffffff;
+        }
+        @keyframes actn{
+            from{background-color:#00F3BB; }
+            to {background: linear-gradient( 225deg, #0000FE 0%, #00F0B8 100%); 
+            }
+        }
+    }
+
+.titulo {
+    #p-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 321px) {
+    .titulo {
+        #p-mobile {
+            display: none;
+        }
+        #p-desktop {
+            display: flex;
+            font-size: 16px;
+            width: 628px;
+            height: 48px;
+            margin-top: 0;
+            }
+        }
+        
+    }
